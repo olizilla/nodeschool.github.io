@@ -6,32 +6,97 @@
 }
 
 body {
-  background-color: rgb(88,20,94);
-  color: rgb(240,230,120);
+  margin:0;
+  background: rgb(56,75,83);
+  color: rgb(240,240,240);
   font-family: CenturySchoolBookMono, monospace;
+  font-size: 22px;
 }
 
 .content {
-  max-width: 700px;
+  max-width: 950px;
   margin: 20px auto 30px auto;
 }
 
 .content ul { text-align: left; }
 
 #header {
-  text-align: center;
+  min-height: 500px;
+  background:
+    url(images/rainbow.png) left top repeat-x,
+    url(images/nodeschool-hex.svg) center 130px/ 300px no-repeat,
+    url(images/gridme.png) left 8px,
+    rgb(243,243,243);
+
+    text-align: center;
+}
+#header nav{
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-#logo { padding: 20px 20px 40px 20px; }
+#header .note{
+  float: left;
+  width:220px;
+  margin-top: 83px;
+}
+#header .note:last-child{
+  float: right;
+}
 
-.top-title { display: none; }
+h1, h2, h3, .note, #events li, footer a{
+  font-family: 'Cabin Sketch', Future, Impact;
+}
+
+h2{
+  text-align: center;
+  font-size: 38px;
+  color: rgb(240,240,240);
+}
+
+#try-a-lesson{
+  margin-top:40px;
+  padding-top: 40px;
+  background: url(images/rainbow.png) left top repeat-x;
+}
+
+.top-title {
+  margin: 0;
+  padding: 52px 0;
+  font-size: 60px;
+  color: rgb(81,135,160);
+}
+
+#events ul{
+  padding:0;
+}
+#events li{
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+  width:200px; height:200px;
+  color:rgb(230,230,230);
+  background-color: rgb(81,135,160);
+  vertical-align: top;
+  font-size: 30px;
+  padding-top: 20px;
+  margin: 0 10px 40px;
+}
+#events li a{
+  display: block;
+  border-top: solid 1px rgb(56,75,83);
+  font-size: 24px;
+  color:rgb(230,230,230);
+  padding:10px;
+  margin-top: 20px;
+}
 
 #header .tagline {
   font-size: 1.2em;
   font-family: CenturySchoolBookMono, Ubuntu, monospace;
   text-transform: uppercase;
   background-color: rgb(135,20,124);
-  color: rgb(240,80,240);
+  color: rgb(240,240,240);
   padding: 5px;
   width: 75%;
   margin: auto;
@@ -59,10 +124,10 @@ h2.section {
   overflow: hidden;
 }
 
-a:link {
+a {
   color: rgb(250,200,120);
 }
-a:visited {
+a:hover {
   color: rgb(200,250,120);
 }
 
@@ -271,10 +336,10 @@ a:link, a:visited {
   width: 400px;
   padding: 20px;
   margin-top: 20px;
-  background-color: rgb(135,20,124);
+  background-color: rgb(81,135,160);
   border-width: 0px;
   font-size: 1.3em;
-  color: rgb(240,80,240);
+  color: rgb(240,240,240);
   cursor: pointer;
   text-align: center;
   text-transform: uppercase;
@@ -290,7 +355,7 @@ a:link, a:visited {
   bottom: 0px;
   content: '';
   border-bottom: 20px solid transparent;
-  border-right: 20px solid rgb(135,20,124);
+  border-right: 20px solid rgb(81,135,160);
 }
 
 .note:after {
@@ -300,7 +365,7 @@ a:link, a:visited {
   bottom: 0px;
   content: '';
   border-top: 20px solid transparent;
-  border-left: 20px solid rgb(135,20,124);
+  border-left: 20px solid rgb(81,135,160);
 }
 
 .note:hover {
@@ -345,4 +410,17 @@ pre {
 }
 .desc.expressworks {
   top:130px;
+}
+
+footer {
+  margin-top:40px;
+  text-align: center;
+  background: rgb(240,240,240) url(images/rainbow.png) left bottom repeat-x;
+}
+
+footer a{
+  display: inline-block;
+  color:rgb(56,75,83);
+  font-size: 30px;
+  padding: 20px;
 }

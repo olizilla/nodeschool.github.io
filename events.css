@@ -8,6 +8,7 @@ body { background: rgb(88,20,94); }
   padding: 5px;
   background-color: #992216;
   position: relative;
+  font-size: 14px;
 }
 
 .month-table:before, .month-table:after {
@@ -136,7 +137,7 @@ a:hover {
 /* Map */
 
 #map {
-  margin: 20px auto;
+  margin: -45px auto 30px;
   height: 350px;
   width: 75%;
   background-color: #46004D;
